@@ -65,3 +65,26 @@ body{
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
 }
+
+#music-page {
+	overflow-y: scroll;
+}
+
+.song-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15% auto;
+	width: 90%;
+}
+
+.song-container a {
+ color: black;
+ text-decoration: none;
+ margin: 2% auto;
+}
+
+.song-cover {
+	width: 40%;
+}

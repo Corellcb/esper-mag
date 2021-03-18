@@ -35,7 +35,7 @@ function loadPage(page, pageElement) {
 	img.load(function() {
 		
 		// Set the size
-		$(this).css({width: '100%', height: 'auto'});
+		$(this).css({width: '100%', height: '100%'});
 
 		// Add the image to the page after loaded
 
@@ -60,6 +60,7 @@ function loadLargePage(page, pageElement) {
 	img.load(function() {
 
 		var prevImg = pageElement.find('img');
+		console.log()
 		$(this).css({width: '100%', height: '100%'});
 		$(this).appendTo(pageElement);
 		prevImg.remove();
