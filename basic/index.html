@@ -8,20 +8,29 @@
 <meta name="viewport" content="width = 1050, user-scalable = no" />
 <script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+<title>Esper Magazine</title>
 </head>
 <body>
 
 <div class="flipbook-viewport">
+	<!-- Visualizer Embeds -->
+	<div style="display: none;" class="embed-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/rJJTJyp5HJo" title="YouTube video player"
+			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+	</div>
 	<div class="container">
 		<div class="flipbook">
 			<div style="background-image:url(pages/cover-page.png)"></div>
 			<div style="background-image:url(pages/1.jpg)"></div>
 			<div style="background-image:url(pages/2.jpg)">
-				<h1>Table of Contents</h1>
-				<div class="menu">
-					<p>Music</p>
-					<p>Visuals</p>
-					<p>Newsletter/Press<span>+Gallery</span></p>
+				<div class="table-of-contents">
+					<h1>Table of Contents</h1>
+					<div>
+						<p>Music</p>
+						<p>Visuals</p>
+						<p>Newsletter/Press<span>+Gallery</span></p>
+					</div>
 				</div>
 				<div class="socials">
 					<a href="https://www.instagram.com/esperbeats/"><i class="fab fa-instagram-square"></i></a>
@@ -31,7 +40,10 @@
 					<a href="https://itunes.apple.com/us/artist/esper-beats/1482703243"></a>
 				</div>
 			</div>
+
+			<!-- Page 3 -->
 			<div style="background-image:url(pages/3.jpg);" id="music-page">
+				<!-- Songs -->
 				<div class="song-container">
 					<img class="song-cover" src='./pics/1. Teen Spirit + Crush (72px).jpg' alt='Teen Spirit + Crush' />
 
@@ -84,10 +96,17 @@
 				</div>
 			</div>
 			<div style="background-image:url(pages/4.jpg)"></div>
-			<div style="background-image:url(pages/5.jpg)"></div>
+			
+			<div style="background-image:url(pages/5.jpg);"></div>
 			<div style="background-image:url(pages/6.gif)"></div>
-			<div style="background-image:url(pages/7.jpg)"></div>
-			<div style="background-image:url(pages/8.jpg)"></div>
+			<div style="background-image:url(pages/7.jpg)">
+				<div class="carousel-container">
+					<!-- Carousel Here -->
+				</div>
+			</div>
+			<div style="background-image:url(pages/8.jpg)">
+			<!-- Email form and press articles here -->
+			</div>
 		</div>
 	</div>
 </div>
@@ -118,9 +137,27 @@ function loadApp() {
 			
 			// Auto center this flipbook
 
-			autoCenter: true
+			autoCenter: true,
+
+			when: {
+				turning: function(event, page, view) {
+					$('.embed-container').css('display', 'none');
+				},
+
+				turned: function(event, page, view) {
+					console.log(page, view);
+					if(page === 6 || page === 7) {
+						$('.embed-container').css('display', 'inline-block');
+					} else {
+						$('.embed-container').css('display', 'none');
+					}
+				}
+			}
+
 
 	});
+
+	
 }
 
 // Load the HTML4 version if there's not CSS transform
