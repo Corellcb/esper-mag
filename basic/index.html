@@ -8,6 +8,7 @@
 <meta name="viewport" content="width = 1050, user-scalable = no" />
 <script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
 <script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+<script src="https://kit.fontawesome.com/a9be53a47c.js" crossorigin="anonymous"></script>
 <title>Esper Magazine</title>
 </head>
 <body>
@@ -22,26 +23,29 @@
 	<div class="container">
 		<div class="flipbook">
 			<div style="background-image:url(pages/cover-page.png)"></div>
-			<div style="background-image:url(pages/1.jpg)"></div>
+			<div style="background-image:url(pages/1.jpg)">
+				<div class="socials">
+					<a href="https://www.instagram.com/esperbeats/"><i class="fab fa-instagram-square"></i></a>
+					<a href="https://www.instagram.com/esperbeats/"><i class="fab fa-instagram"></i></a>
+					<a href="https://twitter.com/esperbeats"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.youtube.com/channel/UCvfh5LTUiYzn7u-Enfvym_A"><i class="fab fa-youtube-square"></i></a>
+					<a href="https://open.spotify.com/artist/0OG7KTist9Mqax1EIJQrYT"><i class="fab fa-spotify"></i></a>
+					<a href="https://itunes.apple.com/us/artist/esper-beats/1482703243"><i class="fab fa-itunes"></i></a>
+				</div>
+			</div>
 			<div style="background-image:url(pages/2.jpg)">
 				<div class="table-of-contents">
 					<h1>Table of Contents</h1>
-					<div>
+					<div class="table-of-contents">
 						<p>Music</p>
 						<p>Visuals</p>
-						<p>Newsletter/Press<span>+Gallery</span></p>
+						<p>Newsletter/Press<span id="gallery-marker">+Gallery</span></p>
 					</div>
 				</div>
-				<div class="socials">
-					<a href="https://www.instagram.com/esperbeats/"><i class="fab fa-instagram-square"></i></a>
-					<a href="https://twitter.com/esperbeats"></a>
-					<a href="https://www.youtube.com/channel/UCvfh5LTUiYzn7u-Enfvym_A"></a>
-					<a href="https://open.spotify.com/artist/0OG7KTist9Mqax1EIJQrYT"></a>
-					<a href="https://itunes.apple.com/us/artist/esper-beats/1482703243"></a>
-				</div>
+				
 			</div>
 
-			<!-- Page 3 -->
+			<!-- Page 4 -->
 			<div style="background-image:url(pages/3.jpg);" id="music-page">
 				<!-- Songs -->
 				<div class="song-container">
@@ -99,20 +103,22 @@
 			
 			<div style="background-image:url(pages/5.jpg);"></div>
 			<div style="background-image:url(pages/6.gif)"></div>
-			<div style="background-image:url(pages/7.jpg)">
+			<div id="gallery-page" style="background-image:url(pages/7.jpg)">
 				<!-- Carousel -->
+				<i class="fas fa-arrow-left"></i>
 				<div style="width: 85%;" class="carousel-container">
-					<img src="./pics/gallery/1.jpg" alt="gallery">
-					<img src="./pics/gallery/2.jpg" alt="gallery">
-					<img src="./pics/gallery/3.jpg" alt="gallery">
-					<img src="./pics/gallery/4.jpg" alt="gallery">
-					<img src="./pics/gallery/5.jpg" alt="gallery">
-					<img src="./pics/gallery/6.jpg" alt="gallery">
-					<img src="./pics/gallery/7.jpg" alt="gallery">
-					<img src="./pics/gallery/8.jpg" alt="gallery">
-					<img src="./pics/gallery/9.jpg" alt="gallery">
-					<img src="./pics/gallery/10.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/1.jpg" alt="gallery">
+					<img class="carousel-img active" src="./pics/gallery/2.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/3.jpeg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/4.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/5.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/6.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/7.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/8.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/9.jpg" alt="gallery">
+					<img class="carousel-img " src="./pics/gallery/10.jpg" alt="gallery">
 				</div>
+				<i class="fas fa-arrow-right"></i>
 			</div>
 			<div style="background-image:url(pages/8.jpg)">
 				<!-- Email form  -->
@@ -127,12 +133,14 @@
 							<input type="text" name="email" placeholder="DoJo123@email.com" required>
 						</div>
 						<div>
-							<input type="submit" value="Submit" required>
+							<input type="submit" value="Submit">
 						</div>
 					</form>
 				</div>
 				<!-- Press articles -->
-				<div></div>
+				<div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -184,7 +192,8 @@ function loadApp() {
 
 	});
 
-	
+	let carousel = $('.carousel-img');
+	console.log(carousel);
 }
 
 // Load the HTML4 version if there's not CSS transform
