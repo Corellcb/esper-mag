@@ -1,5 +1,4 @@
 
-
 function addPage(page, book) {
 
 	var id, pages = book.turn('pages');
@@ -48,26 +47,6 @@ function loadPage(page, pageElement) {
 
 	img.attr('src', 'pages/' +  page + '.jpg');
 
-}
-
-
-function loadLargePage(page, pageElement) {
-	
-	var img = $('<img />');
-
-	img.load(function() {
-
-		var prevImg = pageElement.find('img');
-		console.log()
-		$(this).css({width: '100%', height: '100%'});
-		$(this).appendTo(pageElement);
-		prevImg.remove();
-		
-	});
-
-	// Loadnew page
-	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
 }
 
 
