@@ -51,17 +51,17 @@
 				<div class="toc-container">
 					<h1 style="text-align: center;">Table of Contents</h1>
 					<div class="table-of-contents">
-						<div>
+						<div onclick="$('#flipbook').turn('page', 4)">
 							<p>Music</p>
 							<p>Pg. 3</p>
 						</div>
 						<div>
-							<p>Visuals</p>
-							<p>Pg. 6/7</p>
+							<p onclick="$('#flipbook').turn('page', 6)">Visuals</p>
+							<p>Pg. 5</p>
 						</div>
 						<div>
-							<p>Newsletter/Press<span id="gallery-marker">+Gallery</span></p>
-							<p>Pg. 8/9</p>
+							<p onclick="$('#flipbook').turn('page', 8)">Newsletter/Press<span id="gallery-marker">+Gallery</span></p>
+							<p>Pg. 7</p>
 						</div>
 						<div class="socials">
 							<a href="https://open.spotify.com/artist/0OG7KTist9Mqax1EIJQrYT"><i class="fab fa-spotify"></i></a>
@@ -225,9 +225,9 @@ function loadApp() {
 
 yepnope({
 	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.js'],
+	yep: ['../../lib/turn.js', ],
 	nope: ['../../lib/turn.html4.min.js'],
-	both: ['css/basic.css'],
+	both: ['css/basic.css', 'js/basic.js'],
 	complete: loadApp
 });
 
