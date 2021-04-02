@@ -73,23 +73,58 @@ body{
 }
 
 /* Page 3 */
-.socials {
+.toc-container {
+	font-size: 1.2rem;
+	width: 90%;
+	margin: 2% auto;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+}
+
+.toc-container h1 {
+	letter-spacing: 3px;
+}
+
+.table-of-contents {
+	width: 85%;
+	margin: 3% auto;
+	display: flex;
+	flex-flow: column nowrap;
+	background: linear-gradient(to right, rgba(0, 90, 167, .1), rgba(255, 253, 228, .1));
+}
+
+.table-of-contents div {
+	border-radius: 10px;
+	padding: 5%;
+	margin: 2%;
+	width: 85%;
+	height: 35px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-of-contents p {
+	color: black;
+	opacity: 90%;
+}
+
+.socials {
+	display: flex;
+	align-self: flex-start;
+	margin-left: -5%;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
 	font-size: 2rem;
-	/* border: 1px solid black; */
-	width: 5%;
-	background: linear-gradient(to right, rgba( 0, 90, 167, .3), rgba(255, 253, 228, .3));
-	position: fixed;
-	bottom: 30%;
-	right: 50%;
 }
 
 .socials a {
 	color: black;
 	opacity: 90%;
+	margin: 0;
+	padding: 0;
 }
 
 /* Page 4 */
@@ -97,17 +132,17 @@ body{
 	overflow-y: scroll;
 }
 
-#music-page::-webkit-scrollbar {
-	width: 1em;
+::-webkit-scrollbar {
+	width: 15px;
 }
 
-#music-page::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 }
 
-#music-page::-webkit-scrollbar-thumb {
-	background-color: rgba(255, 255, 255, .3);
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 }
 
@@ -117,28 +152,33 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	margin: 15% auto;
-	width: 90%;
+	width: 75%;
+	background-color: rgba(0, 0, 0, .2);
 }
 
 .song-container a {
- color: black;
+ color: white;
+ letter-spacing: 2px;
  text-decoration: none;
+ font-size: 1.2rem;
  margin: 2% auto;
 }
 
 .song-cover {
-	width: 40%;
+	width: 50%;
 }
 
 /* Page 6 */
 .embed-container {
 	width:461px;
+	height: 400px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	margin-top: -150px;
-	margin-left: -230px;
+	margin-top: -200px;
+	margin-left: -215px;
 	z-index: 10;
+	overflow-y: scroll;
 }
 
 .embed-container iframe {
@@ -148,26 +188,31 @@ body{
 
 /* Page 8 */
 #gallery-page {
-	display: grid;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow-y: scroll;
 }
 
 .carousel-container {
 	width: 100%;
 	height: 100%;
+	padding: 7%;
 	display: flex;
-	margin: auto;
-	justify-content: center;
+	flex-flow: column nowrap;
 	align-items: center;
+	margin: auto;
 }
 
 .carousel-img {
-	display: none;
-	width: 90%;
+	width: 70%;
+	margin: 20px auto;
+	padding: 2%;
 }
 
-.active {
-	display: inline-block;
-	border: 1px solid black;
+.fas {
+	font-size: 2rem;
+	margin: 0 10%;
 }
 
 /* Page 9 */
