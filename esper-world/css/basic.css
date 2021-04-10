@@ -172,11 +172,11 @@ body{
 /* Page 6 */
 .embed-container {
 	width:461px;
-	height: 400px;
+	height: 600px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	margin-top: -200px;
+	margin-top: -300px;
 	margin-left: -215px;
 	z-index: 10;
 	overflow-y: scroll;
@@ -184,7 +184,6 @@ body{
 
 .embed-container iframe {
 	width: 100%;
-	margin: auto;
 }
 
 /* Page 8 */
