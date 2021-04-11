@@ -1,53 +1,47 @@
-function loadApp() {
+$(document).ready(function () {
+    function loadApp() {
 
-    // Create the flipbook
+        // Create the flipbook
 
-    $('.flipbook').turn({
-        // Width
+        $('.flipbook').turn({
+            // Width
 
-        width: 922,
+            width: 922,
 
-        // Height
+            // Height
 
-        height: 600,
+            height: 600,
 
-        // Elevation
+            // Elevation
 
-        elevation: 0,
+            elevation: 40,
 
-        // Enable gradients
+            // Enable gradients
 
-        gradients: true,
+            gradients: true,
 
-        // Auto center this flipbook
+            // Auto center this flipbook
 
-        autoCenter: true,
+            autoCenter: true,
 
-        when: {
-            turning: function (event, page, view) {
-                $('.embed-container').css('display', 'none');
-            },
-
-            turned: function (event, page, view) {
-                console.log(page, view);
-                if (page === 6 || page === 7) {
-                    $('.embed-container').css('display', 'inline-block');
-                } else {
+            when: {
+                turning: function (event, page, view) {
                     $('.embed-container').css('display', 'none');
+                },
+
+                turned: function (event, page, view) {
+                    console.log(page, view);
+                    if (page === 6 || page === 7) {
+                        $('.embed-container').css('display', 'inline-block');
+                    } else {
+                        $('.embed-container').css('display', 'none');
+                    }
                 }
             }
-        }
 
 
-    });
-}
+        });
+    }
 
-// Load the HTML4 version if there's not CSS transform
-
-yepnope({
-    test: Modernizr.csstransforms,
-    yep: ['../../lib/turn.js'],
-    nope: ['../../lib/turn.html4.min.js'],
-    both: ['css/basic.css'],
-    complete: loadApp
+    loadApp();
 });
