@@ -41,6 +41,16 @@ body{
 	background-size:100% 100%;
 }
 
+@media only screen and (max-width: 800px) {
+	.flipbook-viewport .flipbook{
+		width: 576px;
+		height: 750px;
+		left: -288px;
+		top: -375px;
+	}
+
+}
+
 .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -92,7 +102,7 @@ body{
 	margin: 3% auto;
 	display: flex;
 	flex-flow: column nowrap;
-	background: linear-gradient(to right, rgba(0, 90, 167, .1), rgba(255, 253, 228, .1));
+	background-color: rgba(255, 255, 255, .1);
 }
 
 .table-of-contents div {
@@ -179,6 +189,13 @@ body{
 	margin-left: -288px;
 	z-index: 10;
 	overflow-y: scroll;
+}
+
+@media only screen and (max-width: 800px) {
+	.embed-container{
+		margin-left: -200px;
+	}
+
 }
 
 .embed-container iframe {

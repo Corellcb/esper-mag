@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("button").click( () => {
             $(".flipbook").turn("page", 4);
     })
@@ -28,13 +29,16 @@ $(document).ready(function () {
 
             autoCenter: true,
 
+            // Events
+
             when: {
                 turning: function (event, page, view) {
+                    // Hide embed on every page turn
                     $('.embed-container').css('display', 'none');
                 },
 
                 turned: function (event, page, view) {
-                    console.log(page, view);
+                    // Display embeds when on the right pages
                     if (page === 6 || page === 7) {
                         $('.embed-container').css('display', 'inline-block');
                     } else {
@@ -72,8 +76,10 @@ $(document).ready(function () {
 
             autoCenter: true,
 
+            // Show one page at a time
             display: "single",
 
+            // Events
             when: {
                 turning: function (event, page, view) {
                     $('.embed-container').css('display', 'none');
@@ -93,16 +99,18 @@ $(document).ready(function () {
 
         });
 
+        // Remove empty pages for single page display on mobile version of app
         $('.flipbook').turn('removePage', 2);
-        $('.flipbook').turn('removePage', 6);
-        $('.flipbook').turn('removePage', 5);
+        $('.flipbook').turn('removePage', 4);
+        $('.flipbook').turn('removePage', 4);
     }
 
+    // Checking for mobile or desktop
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        loadMobileApp();
         console.log("Mobile");
+        loadMobileApp();
     } else {
-        loadApp();
         console.log("Desktop");
+        loadApp();
     }
 });
