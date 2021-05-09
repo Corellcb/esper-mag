@@ -31,6 +31,7 @@ $(document).ready(function () {
                 turning: function (event, page, view) {
                     // Hide embed on every page turn
                     $('.embed-container').css('display', 'none');
+                    $('.tute-box').css('display', 'none')
                 },
 
                 turned: function (event, page, view) {

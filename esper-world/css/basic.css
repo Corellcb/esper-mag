@@ -82,6 +82,40 @@ body{
 	box-shadow:0 0 20px #ccc;
 } */
 
+/* Cover Page */
+
+.tute-box {
+	position: fixed;
+	bottom: 0%;
+	right: -200px;
+}
+
+.tute-box p {
+	color: white;
+	font-size: 1.5rem;
+	animation-name: text-bounce;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes text-bounce {
+	 0% {
+	 	transform: translateY(10px);
+	 }
+
+	 25% {
+	 	transform: translateY(-10px);
+	 }
+
+	 50% {
+	 	transform: translateY(-10px);
+	 }
+
+	 100% {
+	 	transform: translateY(10px);
+	 }
+}
+
 /* Page 3 */
 .toc-container {
 	font-size: 1.2rem;
