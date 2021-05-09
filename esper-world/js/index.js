@@ -86,6 +86,7 @@ $(document).ready(function () {
                     console.log(page, view);
                     if (page === 4) {
                         $('.embed-container').css('width', '400px');
+                        $('.embed-container').css('margin-left', '200px');
                         $('.embed-container').css('display', 'inline-block');
                     } else {
                         $('.embed-container').css('display', 'none');

@@ -253,13 +253,6 @@ body{
 	overflow-y: scroll;
 }
 
-@media only screen and (max-width: 1200px) {
-	.embed-container{
-		margin-left: -200px;
-	}
-
-}
-
 .embed-container iframe {
 	width: 100%;
 }
