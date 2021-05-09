@@ -186,20 +186,24 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	margin: 15% auto;
+	padding: 2% 4%;
 	width: 75%;
 	background-color: rgba(0, 0, 0, .2);
 }
 
 .song-container a {
+ width: 45%;
  color: white;
  letter-spacing: 2px;
  text-decoration: none;
  font-size: 1.2rem;
  margin: 2% auto;
+ text-align: center;
 }
 
 .song-cover {
-	width: 50%;
+	width: 100%;
+	margin: 2% auto;
 }
 
 /* Page 6 */
