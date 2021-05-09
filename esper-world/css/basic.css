@@ -98,13 +98,6 @@ body{
 	animation-iteration-count: infinite;
 }
 
-@media (max-width: 1200px) {
-	.tute-box {
-		right: -70px;
-	}
-
-}
-
 @keyframes text-bounce {
 	 0% {
 	 	transform: translateY(10px);
@@ -260,7 +253,7 @@ body{
 	overflow-y: scroll;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.embed-container{
 		margin-left: -288px;
 	}

@@ -106,6 +106,7 @@ $(document).ready(function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         console.log("Mobile");
         loadMobileApp();
+        $('.tute-box').css('display', 'none');
     } else {
         console.log("Desktop");
         loadApp();
