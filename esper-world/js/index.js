@@ -29,7 +29,7 @@ $(document).ready(function () {
 
             when: {
                 turning: function (event, page, view) {
-                    // Hide embed on every page turn
+                    // Hide embed and red-arrow on every page turn
                     $('.embed-container').css('display', 'none');
                     $('.tute-box').css('display', 'none')
                 },
@@ -113,5 +113,17 @@ $(document).ready(function () {
 });
 
 function pageSkip(page) {
-    $(".flipbook").turn("page", page);
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        if( page === 4) {
+            $(".flipbook").turn("page", 3);
+        }
+        if( page === 6) {
+            $(".flipbook").turn("page", 4);
+        }
+        if( page === 8) {
+            $(".flipbook").turn("page", 6);
+        }
+    } else {
+        $(".flipbook").turn("page", page);
+    }
 }
