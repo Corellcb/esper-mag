@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    $("button").click( () => {
-            $(".flipbook").turn("page", 4);
-    })
-
     function loadApp() {
 
         // Create the flipbook
@@ -114,3 +110,7 @@ $(document).ready(function () {
         loadApp();
     }
 });
+
+function pageSkip(page) {
+    $(".flipbook").turn("page", page);
+}

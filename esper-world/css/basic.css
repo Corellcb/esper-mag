@@ -102,13 +102,14 @@ body{
 	margin: 3% auto;
 	display: flex;
 	flex-flow: column nowrap;
-	background-color: rgba(255, 255, 255, .1);
+	background-color: rgba(255, 255, 255, .35);
+	margin-top: 10%;
 }
 
 .table-of-contents div {
 	border-radius: 10px;
 	padding: 5%;
-	margin: 0;
+	margin: 0 auto;
 	width: 85%;
 	height: 35px;
 	display: flex;
@@ -117,8 +118,31 @@ body{
 
 .table-of-contents p {
 	color: black;
-	opacity: 90%;
-	font-size: 1.1rem;
+	opacity: 85%;
+	font-size: 1.2rem;
+	margin: 2%;
+}
+
+.table-of-contents button {
+	background: none;
+	border: none;
+	text-decoration: underline;
+	font-size: 1rem;
+}
+
+.table-of-contents button:hover {
+	color: white;
+}
+
+#gallery-marker {
+	background-color: black;
+	opacity: 85%;
+	color: whitesmoke;
+	border-radius: 10px;
+	font-size: .75rem;
+	vertical-align: text-top;
+	margin: 2% auto;
+	padding: 5px;
 }
 
 .socials {
