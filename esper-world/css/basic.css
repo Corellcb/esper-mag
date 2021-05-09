@@ -5,7 +5,7 @@
 /* general/default */
 body{
 	overflow:hidden;
-	background-color:#fcfcfc;
+	background-color:#000000;
 	margin:0;
 	padding:0;
 	font-family: 'Bebas Neue', cursive;
@@ -41,7 +41,7 @@ body{
 	background-size:100% 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 1200px) {
 	.flipbook-viewport .flipbook{
 		width: 576px;
 		height: 750px;
@@ -51,13 +51,13 @@ body{
 
 }
 
-.flipbook .page{
+/* .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	box-shadow:0 0 20px rgba(0,0,0,0.2);
-}
+} */
 
 .flipbook-viewport .page img{
 	-webkit-touch-callout: none;
@@ -69,7 +69,7 @@ body{
 	margin:0;
 }
 
-.flipbook-viewport .shadow{
+/* .flipbook-viewport .shadow{
 	-webkit-transition: -webkit-box-shadow 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s;
 	-o-transition: -webkit-box-shadow 0.5s;
@@ -80,7 +80,7 @@ body{
 	-o-box-shadow:0 0 20px #ccc;
 	-ms-box-shadow:0 0 20px #ccc;
 	box-shadow:0 0 20px #ccc;
-}
+} */
 
 /* Page 3 */
 .toc-container {
@@ -191,7 +191,7 @@ body{
 	overflow-y: scroll;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 	.embed-container{
 		margin-left: -200px;
 	}
@@ -232,14 +232,22 @@ body{
 }
 
 /* Page 9 */
-.email-container {
-	width: 50%;
-	margin: auto;
-	position: relative;
-	top: 30vh;
+
+#mc_embed_signup {
+	background: #fff;
+	clear: left;
+	font: 14px Helvetica, Arial, sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60%;
 }
 
-.email-container form {
-	margin: 0 auto;
-	text-align: center;
+.press-container {
+	width: 80%;
+	margin: 2% auto;
+}
+
+.press-img {
+	width: 100%;
+	margin: 2% auto;
 }

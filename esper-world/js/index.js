@@ -19,7 +19,7 @@ $(document).ready(function () {
 
             // Elevation
 
-            elevation: 40,
+            elevation: 0,
 
             // Enable gradients
 
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 },
 
                 turned: function (event, page, view) {
-                    // Display embeds when on the right pages
+                    // Display embeds when on the visualizer pages
                     if (page === 6 || page === 7) {
                         $('.embed-container').css('display', 'inline-block');
                     } else {
