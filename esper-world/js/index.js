@@ -78,17 +78,12 @@ $(document).ready(function () {
 
             // Events
             when: {
-                turning: function (event, page, view) {
+                turning: () => {
                     $('.embed-container').css('display', 'none');
                 },
 
-                turned: function (event, page, view) {
-                    console.log(page, view);
-                    if (page === 4) {
-                        $('.embed-container').css('display', 'inline-block');
-                    } else {
-                        $('.embed-container').css('display', 'none');
-                    }
+                turned: (event, page) => {
+                    page === 4 ? $('.embed-container').css('display', 'inline-block') : $('.embed-container').css('display', 'none');
                 }
             }
 
@@ -102,17 +97,11 @@ $(document).ready(function () {
     }
 
     // Checking for mobile or desktop
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        console.log("Mobile");
-        loadMobileApp();
-        $('.tute-box').css('display', 'none');
-    } else {
-        console.log("Desktop");
-        loadApp();
-    }
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? loadMobileApp() : loadApp();
 });
 
-function pageSkip(page) {
+// handling table of contents buttons
+const pageSkip = (page) => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         if( page === 4) {
             $(".flipbook").turn("page", 3);
@@ -126,4 +115,22 @@ function pageSkip(page) {
     } else {
         $(".flipbook").turn("page", page);
     }
+}
+
+// adding onClick to the modal background so you can click out
+$('.modal-bg').on('click', () => {
+    $('.modal-bg').hide();
+});
+
+let modalCounter = 0;
+
+const showModal = (value) => {
+    $('.modal-bg').show();
+    modalCounter = value;
+    $('#modal-img').attr('src', "./pics/gallery/" + modalCounter + ".jpg");
+}
+
+const handleChange = (direction) => {
+    modalCounter += direction;
+    showModal(modalCounter);
 }
