@@ -55,11 +55,11 @@ $(document).ready(function () {
         $('.flipbook').turn({
             // Width
 
-            width: 576,
+            width: 600,
 
             // Height
 
-            height: 750,
+            height: 400,
 
             // Elevation
 
