@@ -59,7 +59,7 @@ $(document).ready(function () {
 
             // Height
 
-            height: 750,
+            height: 1150,
 
             // Elevation
 
