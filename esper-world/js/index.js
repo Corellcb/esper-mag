@@ -55,7 +55,7 @@ $(document).ready(function () {
         $('.flipbook').turn({
             // Width
 
-            width: 1152,
+            width: 576,
 
             // Height
 
