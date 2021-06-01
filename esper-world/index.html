@@ -6,18 +6,16 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif] -->
 <head>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
-<script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
-<script src="./lib/turn.js"></script>
 <link rel="stylesheet" href="css/basic.css">
-<script src="https://kit.fontawesome.com/a9be53a47c.js" crossorigin="anonymous"></script>
-<title>Esper Magazine</title>
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<title>Esper World Magazine</title>
 </head>
 <body>
 
 <div class="flipbook-viewport">
 	<!-- Visualizer Embeds -->
 	<div style="display: none;" class="embed-container">
+		<div style="height: 25%;"></div>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/C0UQC2BmuBY" title="YouTube video player"
 			frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen></iframe>
@@ -45,7 +43,12 @@
 	</div>
 	<div class="container">
 		<div class="flipbook">
-			<div style="background-image:url(pages/cover-page.png)"></div>
+			<div style="background-image:url(pages/cover-page.jpg)">
+				<div class="tute-box">
+					<p>Click or swipe left here!</p>
+					<img src="./pics/red-arrow.png" alt="Click here! - red arrow">
+				</div>
+			</div>
 			<div style="background-image:url(pages/1.jpg)">
 				
 			</div>
@@ -55,15 +58,15 @@
 					<div class="table-of-contents">
 						<div class="page-marker-container">
 							<p>Music</p>
-							<button onclick="pageSkip(4)">Page 3</button>
+							<button onclick="pageSkip(4)">PAGE 3</button>
 						</div>
 						<div class="page-marker-container">
 							<p>Visualizers</p>
-							<button onclick="pageSkip(6)">Page 5</button>
+							<button onclick="pageSkip(6)">PAGE 5</button>
 						</div>
 						<div class="page-marker-container">
 							<p>Newsletter/Press/Gallery</p>
-							<button onclick="pageSkip(8)">Page 7</button>
+							<button onclick="pageSkip(8)">PAGE 7</button>
 						</div>
 						<div class="socials">
 							<a href="https://open.spotify.com/artist/0OG7KTist9Mqax1EIJQrYT" target="_blank"><i class="fab fa-spotify"></i></a>
@@ -82,52 +85,70 @@
 			<div style="background-image:url(pages/3.jpg);" id="music-page">
 				<!-- Songs -->
 				<div class="song-container">
-					<img class="song-cover" src='./pics/music/1. Teen Spirit + Crush (72px).jpg' alt='Teen Spirit + Crush' />
+					<a class="album-cover-link" href="https://album.link/r3rBjc0bdDG7Q" target="_blank"><img class="song-cover"
+							src='./pics/music/1. Teen Spirit + Crush.jpg' alt='Teen Spirit + Crush' /></a>
 
 					<a href="https://album.link/r3rBjc0bdDG7Q" target="_blank">Teen Spirit + Crush</a>
 				</div>
+
 				<div style="flex-direction: row-reverse;" class="song-container">
-					<img class="song-cover" src='./pics/music/2. SFL Remix EP (72px).jpg' alt=' SFL Remix EP' />
+					<a class="album-cover-link" href="https://album.link/kphV87Ds92rF3" target="_blank"><img class="song-cover"
+							src='./pics/music/2. SFL Remix EP.jpg' alt=' SFL Remix EP' /></a>
 
 					<a href="https://album.link/kphV87Ds92rF3" target="_blank">SFL Remix EP</a>
 				</div>
+
 				<div class="song-container">
-					<img class="song-cover" src='./pics/music/3. SFL (72px).jpg' alt='SFL' />
+					<a class="album-cover-link" href=" https://song.link/zWKmV37dXrWKf" target="_blank"><img class="song-cover"
+							src='./pics/music/3. SFL.jpg' alt='SFL' /></a>
 
 					<a href=" https://song.link/zWKmV37dXrWKf" target="_blank">SFL</a>
 				</div>
+
 				<div style="flex-direction: row-reverse;" class="song-container">
-					<img class="song-cover" src='./pics/music/4. Amazon (72px).jpg' alt='Amazon' />
+					<a class="album-cover-link" href="https://song.link/VvPTC7x7fkNdm" target="_blank"><img class="song-cover"
+							src='./pics/music/4.-Amazon.jpg' alt='Amazon' /></a>
 
 					<a href="https://song.link/VvPTC7x7fkNdm" target="_blank">Amazon</a>
 				</div>
-				<div class="song-container">
-					<img class="song-cover" src='./pics/music/5. Galvanized (72px).jpg' alt='Galvanized' />
 
+				<div class="song-container">
+					<a class="album-cover-link" href="https://song.link/kHh0S6Vpxh55G" target="_blank"><img class="song-cover"
+							src='./pics/music/5.-Galvanized.jpg' alt='Galvanized' /></a>
+					
 					<a href="https://song.link/kHh0S6Vpxh55G" target="_blank">Galvanized</a>
 				</div>
+
 				<div style="flex-direction: row-reverse;" class="song-container">
-					<img class="song-cover" src='./pics/music/6. Por Vida (72px).jpg' alt='Por Vida' />
+					<a class="album-cover-link" href="https://song.link/9Qj4rQ3H96dq5" target="_blank"><img class="song-cover"
+							src='./pics/music/6.-Por-Vida.jpg' alt='Por Vida' /></a>
 
 					<a href="https://song.link/9Qj4rQ3H96dq5" target="_blank">Por Vida</a>
 				</div>
+
 				<div class="song-container">
-					<img class="song-cover" src='./pics/music/7. Merengue (72px).jpg' alt='Merengue' />
+					<a class="album-cover-link" href="https://song.link/hWNpvvCDhw84J" target="_blank"><img class="song-cover"
+							src='./pics/music/7.-Merengue.jpg' alt='Merengue' /></a>
 
 					<a href="https://song.link/hWNpvvCDhw84J" target="_blank">Merengue</a>
 				</div>
+
 				<div style="flex-direction: row-reverse;" class="song-container">
-					<img class="song-cover" src='./pics/music/8. Slow-Mo (72px).jpg' alt='Slow-Mo' />
+					<a class="album-cover-link" href="https://song.link/DgptFhGpWbfGr" target="_blank"><img class="song-cover"
+							src='./pics/music/8.-Slow-Mo.jpg' alt='Slow-Mo' /></a>
 
 					<a href="https://song.link/DgptFhGpWbfGr" target="_blank">Slow-Mo</a>
 				</div>
+
 				<div class="song-container">
-					<img class="song-cover" src='./pics/music/9. Competition.jpg' alt='Competition' />
+					<a class="album-cover-link" href="https://song.link/dHZrMMHB8B3D2" target="_blank"><img class="song-cover"
+							src='./pics/music/9.-Competition.jpg' alt='Competition' /></a>
 
 					<a href="https://song.link/dHZrMMHB8B3D2" target="_blank">Competition</a>
 				</div>
+
 				<div style="flex-direction: row-reverse;" class="song-container">
-					<img class="song-cover" src='./pics/music/10. Wonderland (72px).jpg' alt='Wonderland' />
+					<a class="album-cover-link" href="https://song.link/hHGMJGRkX5Rkg" target="_blank"><img class="song-cover" src='./pics/music/10.-Wonderland.jpg' alt='Wonderland' /></a>
 
 					<a href="https://song.link/hHGMJGRkX5Rkg" target="_blank">Wonderland</a>
 				</div>
@@ -137,84 +158,109 @@
 			<div style="background-image:url(pages/6.gif)"></div>
 			<div id="gallery-page" style="background-image:url(pages/7.jpg)">
 				<!-- Carousel -->
-				<div style="width: 85%;" class="carousel-container">
-					<img class="carousel-img " src="./pics/gallery/1.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/2.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/3.jpeg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/4.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/5.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/6.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/7.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/8.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/9.jpg" alt="gallery">
-					<img class="carousel-img " src="./pics/gallery/10.jpg" alt="gallery">
+				<div style="width: 85%;" class="gallery-container">
+					<img class="gallery-img " src="./pics/gallery/1.jpg" onclick="showModal(1)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/2.jpg" onclick="showModal(2)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/3.jpg" onclick="showModal(3)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/4.jpg" onclick="showModal(4)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/5.jpg" onclick="showModal(5)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/6.jpg" onclick="showModal(6)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/7.jpg" onclick="showModal(7)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/8.jpg" onclick="showModal(8)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/9.jpg" onclick="showModal(9)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/10.jpg" onclick="showModal(10)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/11.jpg" onclick="showModal(11)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/12.jpg" onclick="showModal(12)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/13.jpg" onclick="showModal(13)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/14.jpg" onclick="showModal(14)" alt="gallery">
+					<img class="gallery-img " src="./pics/gallery/15.jpg" onclick="showModal(15)" alt="gallery">
 				</div>
 			</div>
-			<div style="background-image:url(pages/8.jpg)">
-				<!-- Begin Mailchimp Signup Form -->
-				<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-				<style type="text/css">
-					#mc_embed_signup {
-						background: #fff;
-						clear: left;
-						font: 14px Helvetica, Arial, sans-serif;
-					}
+			<div style="background-image:url(pages/8.jpg); overflow-y: scroll;">
+				<div class="drop-container">
+					<div id="mc_embed_signup">
+						<form action="https://world.us1.list-manage.com/subscribe/post?u=b23909083df10aee534e98bad&amp;id=2af260cbcb"
+							method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+							target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<h2 style="text-align: center;">Newsletter Signup</h2>
+								<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+								<div class="mc-field-group">
+									<label for="mce-NAME">Name </label>
+									<input type="text" value="" name="NAME" class="" id="mce-NAME">
+								</div>
+								<div class="mc-field-group">
+									<label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+									</label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+										name="b_b23909083df10aee534e98bad_2af260cbcb" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+										class="button"></div>
+							</div>
+						</form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+					<script type='text/javascript'>
+						(function ($) {
+							window.fnames = new Array();
+							window.ftypes = new Array();
+							fnames[0] = 'EMAIL';
+							ftypes[0] = 'email';
+							fnames[1] = 'NAME';
+							ftypes[1] = 'text';
+						}(jQuery));
+						var $mcj = jQuery.noConflict(true);
+					</script>
+					<!--End mc_embed_signup-->
 
-					/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-				</style>
-				<div id="mc_embed_signup">
-					<form action="https://world.us1.list-manage.com/subscribe/post?u=b23909083df10aee534e98bad&amp;id=2af260cbcb"
-						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-						target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-							<h2>Newsletter</h2>
-							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-							<div class="mc-field-group">
-								<label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-								</label>
-								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-							</div>
-							<div class="mc-field-group">
-								<label for="mce-NAME">Name </label>
-								<input type="text" value="" name="NAME" class="" id="mce-NAME">
-							</div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-									name="b_b23909083df10aee534e98bad_2af260cbcb" tabindex="-1" value=""></div>
-							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-									class="button"></div>
+					<hr style="width: 90%; margin: 2% auto;">
+
+					<h1 style="text-align: center;">Press</h1>
+
+					<div class="press-container">
+						<div>
+							<a href="https://www.alwayslunes.com/highlights/esperbeats" target="_blank"><img class="press-img"
+									src="./pics/press/AlwaysLunes-(1).jpg" alt="Always Lunes Webpage Screenshot"></a>
+
+							<a id="press-link" href="https://www.alwayslunes.com/highlights/esperbeats">AlwayLunes</a>
 						</div>
-					</form>
-				</div>
-				<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-				<script type='text/javascript'>
-					(function ($) {
-						window.fnames = new Array();
-						window.ftypes = new Array();
-						fnames[0] = 'EMAIL';
-						ftypes[0] = 'email';
-						fnames[1] = 'NAME';
-						ftypes[1] = 'text';
-					}(jQuery));
-					var $mcj = jQuery.noConflict(true);
-				</script>
-				<!--End mc_embed_signup-->
 
-				<!-- Press articles -->
-				<div>
+						
+						<div>
+							<a href="https://www.thecicimcgee.com/post/this-is-esper-beats" target="_blank" rel="noopener noreferrer"><img
+									class="press-img" src="./pics/press/Cici-McGee.jpg" alt="Cici-McGee Webpage Screenshot"></a>
 
+							<a id="press-link" href="https://www.thecicimcgee.com/post/this-is-esper-beats">Cici Mcgee</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<div style="display: none;" class="modal-bg">
+	<div class="modal">
+		<!-- <i onclick="handleChange(-1)" class="far fa-arrow-alt-circle-left"></i> -->
+		<div>
+			<img id="modal-img" src="./pics/gallery/1.jpg" alt="gallery image">
+			<!-- <button onclick="$(' .modal-bg').hide()">X</button> -->
+		</div>
+		<!-- <i onclick="handleChange(1)" class="far fa-arrow-alt-circle-right"></i> -->
+	</div>
+</div>
 
+<script src="https://kit.fontawesome.com/a9be53a47c.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
+<script src="./lib/turn.js"></script>
 <script src="./js/index.js"></script>
 
 </body>

@@ -15,7 +15,7 @@ $(document).ready(function () {
 
             // Elevation
 
-            elevation: 40,
+            elevation: 0,
 
             // Enable gradients
 
@@ -29,12 +29,13 @@ $(document).ready(function () {
 
             when: {
                 turning: function (event, page, view) {
-                    // Hide embed on every page turn
+                    // Hide embed and red-arrow on every page turn
                     $('.embed-container').css('display', 'none');
+                    $('.tute-box').css('display', 'none')
                 },
 
                 turned: function (event, page, view) {
-                    // Display embeds when on the right pages
+                    // Display embeds when on the visualizer pages
                     if (page === 6 || page === 7) {
                         $('.embed-container').css('display', 'inline-block');
                     } else {
@@ -54,11 +55,11 @@ $(document).ready(function () {
         $('.flipbook').turn({
             // Width
 
-            width: 600,
+            width: 900,
 
             // Height
 
-            height: 750,
+            height: 1200,
 
             // Elevation
 
@@ -77,7 +78,7 @@ $(document).ready(function () {
 
             // Events
             when: {
-                turning: function (event, page, view) {
+                turning: () => {
                     $('.embed-container').css('display', 'none');
                 },
 
@@ -102,13 +103,39 @@ $(document).ready(function () {
     }
 
     // Checking for mobile or desktop
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        loadMobileApp();
-    } else {
-        loadApp();
-    }
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? loadMobileApp() : loadApp();
 });
 
-function pageSkip(page) {
-    $(".flipbook").turn("page", page);
+// handling table of contents buttons
+const pageSkip = (page) => {
+        if( page === 4) {
+            $(".flipbook").turn("page", 3);
+        }
+        if( page === 6) {
+            $(".flipbook").turn("page", 4);
+        }
+        if( page === 8) {
+            $(".flipbook").turn("page", 6);
+        }
+     else {
+        $(".flipbook").turn("page", page);
+    }
+}
+
+// adding onClick to the modal background so you can click out
+$('.modal-bg').on('click', () => {
+    $('.modal-bg').hide();
+});
+
+let modalCounter = 0;
+
+const showModal = (value) => {
+    $('.modal-bg').show();
+    modalCounter = value;
+    $('#modal-img').attr('src', "./pics/gallery/" + modalCounter + ".jpg");
+}
+
+const handleChange = (direction) => {
+    modalCounter += direction;
+    showModal(modalCounter);
 }
