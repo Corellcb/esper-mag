@@ -54,7 +54,7 @@ $(document).ready(function () {
         $('.flipbook').turn({
             // Width
 
-            width: 576,
+            width: 600,
 
             // Height
 
@@ -82,8 +82,8 @@ $(document).ready(function () {
                 },
 
                 turned: function (event, page, view) {
-                    console.log(page, view);
                     if (page === 4) {
+                        $('.embed-container').appendTo('#embed-page');
                         $('.embed-container').css('width', '400px');
                         $('.embed-container').css('display', 'inline-block');
                     } else {
@@ -103,10 +103,8 @@ $(document).ready(function () {
 
     // Checking for mobile or desktop
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        console.log("Mobile");
         loadMobileApp();
     } else {
-        console.log("Desktop");
         loadApp();
     }
 });
