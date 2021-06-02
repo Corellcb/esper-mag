@@ -360,7 +360,7 @@ body{
 .modal {
 	width: 75%;
 	height: 95%;
-	margin: auto;
+	margin: 0 auto;
 	padding: 1%;
 	display: flex;
 	justify-content: center;
@@ -372,5 +372,5 @@ body{
 
 .modal img {
 	width: 600px;
-	
+	margin: auto;
 }
