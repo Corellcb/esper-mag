@@ -43,10 +43,10 @@ body{
 
 @media (max-width: 1200px) {
 	.flipbook-viewport .flipbook{
-		width: 576px;
-		height: 750px;
-		left: -288px;
-		top: -375px;
+		width: 900px;
+		height: 1200px;
+		left: -450px;
+		top: -600px;
 	}
 
 }
@@ -263,7 +263,7 @@ body{
 
 @media only screen and (max-width: 1200px) {
 	.embed-container{
-		width: 400px;
+		width: 600px;
 		margin-left: -300px;
 	}
 
