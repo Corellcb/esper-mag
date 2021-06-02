@@ -84,6 +84,7 @@ $(document).ready(function () {
 
                 turned: function (event, page, view) {
                     if (page === 4) {
+                        $('.embed-container').remove();
                         $('.embed-container').appendTo('#embed-page');
                         $('.embed-container').css('width', '600px');
                         $('.embed-container').css('display', 'inline-block');
