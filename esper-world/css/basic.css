@@ -339,8 +339,7 @@ body{
 
 /* Modal */
 @media only screen and (max-width: 1200px) {
-	.modal-bg {
-		width: 100%;
+	.modal {
 		height: 80%;
 	}
 }
