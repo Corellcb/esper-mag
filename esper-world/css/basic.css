@@ -42,7 +42,7 @@ body{
 }
 
 @media only screen and (max-width: 1200px) {
-	.flipbook-viewport .flipbook{
+	.flipbook-viewport .flipbook, .flipbook-viewport .page{
 		width: 900px;
 		height: 1200px;
 		left: -450px;
@@ -92,7 +92,7 @@ body{
 
 @media only screen and (max-width: 1200px) {
 	.tute-box {
-		right: -15px;
+		right: -10px;
 		bottom: 35%;
 	}
 }
@@ -338,6 +338,13 @@ body{
 }
 
 /* Modal */
+@media only screen and (max-width: 1200px) {
+	.modal-bg {
+		width: 100vh;
+		height: 100vh;
+	}
+}
+
 .modal-bg {
 	position: absolute;
 	width: 100%;
