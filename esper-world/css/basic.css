@@ -41,7 +41,7 @@ body{
 	background-size:100% 100%;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	.flipbook-viewport .flipbook{
 		width: 900px;
 		height: 1200px;
