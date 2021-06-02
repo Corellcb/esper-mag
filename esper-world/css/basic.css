@@ -340,7 +340,7 @@ body{
 /* Modal */
 @media only screen and (max-width: 1200px) {
 	.modal {
-		height: 80%;
+		height: 60%;
 	}
 }
 
