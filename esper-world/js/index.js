@@ -85,6 +85,7 @@ $(document).ready(function () {
                 turned: function (event, page, view) {
                     if (page === 4) {
                         $('.embed-container').css('width', '600px');
+                        $('.embed-container').css('height', '900px');
                         $('.embed-container').css('display', 'inline-block');
                     } else {
                         $('.embed-container').css('display', 'none');

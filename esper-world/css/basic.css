@@ -91,12 +91,12 @@ body{
 	right: -200px;
 }
 
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	.tute-box {
 		right: -10px;
 		bottom: 35%;
 	}
-} */
+}
 
 .tute-box p {
 	color: white;
