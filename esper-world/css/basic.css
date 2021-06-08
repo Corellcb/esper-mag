@@ -41,15 +41,13 @@ body{
 	background-size:100% 100%;
 }
 
-/* @media only screen and (max-width: 1200px) {
-	.flipbook-viewport .flipbook, .flipbook-viewport .page{
-		width: 900px;
-		height: 1200px;
-		left: -450px;
-		top: -600px;
+@media only screen and (max-width: 1200px) {
+	.flipbook-viewport .page{
+		width: 90vw;
+		height: 100vh;
 	}
 
-} */
+}
 
 /* .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
