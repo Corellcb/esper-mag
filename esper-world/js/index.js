@@ -95,6 +95,10 @@ $(document).ready(function () {
 
         });
 
+        $('.flipbook').css('position', 'absolute');
+        $('.flipbook').css('left', '-450px');
+        $('.flipbook').css('top', '-600px');
+
         // Remove empty pages for single page display on mobile version of app
         $('.flipbook').turn('removePage', 2);
         $('.flipbook').turn('removePage', 4);
