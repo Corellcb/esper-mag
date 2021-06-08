@@ -41,17 +41,6 @@ body{
 	background-size:100% 100%;
 }
 
-/* @media only screen and (max-width: 1200px) {
-	.flipbook-viewport .flipbook, .flipbook-viewport .page{
-		position: absolute;
-		width: 900px;
-		height: 1200px;
-		left: -450px;
-		top: -600px;
-	}
-
-} */
-
 /* .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -296,6 +285,12 @@ body{
 	width: 70%;
 	margin: 20px auto;
 	padding: 2%;
+}
+
+@media only screen and (max-width: 1200px) {
+	.gallery-img {
+		width: 85%;
+	}
 }
 
 .fas {
