@@ -374,11 +374,12 @@ body{
 
 @media only screen and (max-width: 1200px) {
 	.modal {
-		width: 100vw;
-		height: 100vh;
+		width: 90vw;
+		height: 95vh;
 	}
 
 	.modal img {
-		width: 85%;
+		width: 900px;
+		left: -450px;
 	}
 }
