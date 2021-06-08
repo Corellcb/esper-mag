@@ -333,12 +333,7 @@ body{
 	text-align: center;
 }
 
-/* Modal
-@media only screen and (max-width: 1200px) {
-	.modal {
-		height: 60%;
-	}
-} */
+/* Modal */
 
 .modal-bg {
 	position: absolute;
@@ -375,4 +370,15 @@ body{
 .modal img {
 	width: 600px;
 	margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	.modal {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.modal img {
+		width: 85%;
+	}
 }
