@@ -86,7 +86,7 @@ $(document).ready(function () {
                     if (page === 4) {
                         $('.embed-container').css('width', '600px');
                         $('.embed-container').css('height', '1200px');
-                        $('.embed-container').css('top', '-600px');
+                        $('.embed-container').css('top', '600px');
                         $('.embed-container').css('display', 'inline-block');
                     } else {
                         $('.embed-container').css('display', 'none');
