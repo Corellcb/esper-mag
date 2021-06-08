@@ -41,7 +41,7 @@ body{
 	background-size:100% 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
 	.flipbook-viewport .flipbook, .flipbook-viewport .page{
 		width: 900px;
 		height: 1200px;
@@ -49,7 +49,7 @@ body{
 		top: -600px;
 	}
 
-}
+} */
 
 /* .flipbook .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -90,12 +90,12 @@ body{
 	right: -200px;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
 	.tute-box {
 		right: -10px;
 		bottom: 35%;
 	}
-}
+} */
 
 .tute-box p {
 	color: white;
@@ -261,13 +261,13 @@ body{
 	overflow-y: scroll;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
 	.embed-container{
 		width: 600px;
 		margin-left: -300px;
 	}
 
-}
+} */
 
 .embed-container iframe {
 	width: 100%;
@@ -337,12 +337,12 @@ body{
 	text-align: center;
 }
 
-/* Modal */
+/* Modal
 @media only screen and (max-width: 1200px) {
 	.modal {
 		height: 60%;
 	}
-}
+} */
 
 .modal-bg {
 	position: absolute;
